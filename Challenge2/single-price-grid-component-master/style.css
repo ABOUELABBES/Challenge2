@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;400;500;700&family=Outfit:wght@600&display=swap');
+body{
+    background-color: hsl(204, 43%, 93%);
+    font-family: 'Karla', sans-serif;
+    height: auto;
+    display: flex;
+    flex-direction: column;    
+    align-items: center;  
+
+    
+}
+
+main{
+    display: grid;
+    grid-template-columns: 300px;
+    grid-row: 280px 260px 250px;
+    width: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    
+    
+    
+}
+.section_join{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-color: white;
+    /* padding-top: 15px;
+    padding-bottom: 15px; */
+    padding: 5px 25px;
+
+}
+.header_primary{
+    color: hsl(179, 62%, 43%);
+    font-weight: 700;
+
+}
+.header_secondary{
+    color: hsl(71, 73%, 54%);
+    font-weight: 700;
+    font-size: 16px;
+
+}
+.description{
+    color: hsl(218, 22%, 67%);
+    font-weight: 400;
+    font-size: 12px;
+   line-height: 20px;
+}
+.section_subscription{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background-color: hsl(179, 62%, 43%);
+    padding: 0px 25px;
+    padding-bottom: 28px;
+}
+.title{
+    color: white;
+    
+}
+.price{
+    color: white;
+    font-weight: 700;
+    font-size: x-large;
+    display: flex;
+    gap: 10px;
+   
+}
+.month{
+    color:  hsl(204, 43%, 93%);
+    font-weight: 200;
+    font-size: 16px;
+    padding-top: 3px;
+}
+.details{
+    color: white;
+    font-weight: 400;
+    font-size: small;
+    padding-top: 3px;
+    padding-bottom: 25px;
+}
+.button{
+    text-decoration: none;
+    color: white;
+    background-color:hsl(71, 73%, 54%) ;
+    font-weight: 500;
+    font-size: small;
+    padding: 10px 100px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 20px rgb(135, 134, 134);
+
+}
+.section_why{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    background-color: rgb(81, 189, 189);
+    padding: 0px 25px;
+    padding-bottom: 10px;
+}
+.about_us{
+    color: hsl(204, 43%, 93%) ;
+    font-weight: 200;
+    font-size: 12px;
+    line-height: 17px;
+}
+
+.attribution {
+    color:black; 
+    font-size: small; 
+  }
+
+.attribution a {
+    text-decoration: none;
+    color: hsl(179, 89%, 30%);
+    font-weight: 700;
+  }
+
+  @media screen and (min-width: 1024px){
+
+    main{
+        grid-template-columns: 360px 360px;
+        grid-row: 230px 280px ;
+        width: 100%;
+        padding: 100px;
+        padding-left: 50%;
+        
+    }
+    
+      .section_join{
+        grid-column: 1/3;
+        grid-row: 1/2;
+
+      }
+      .section_subscription{
+        grid-column: 1/2;
+        grid-row: 2/3;
+
+      }
+      .section_why{
+        grid-column: 2/3;
+        grid-row: 2/3;
+
+      }
+      .button{
+          margin-left: 25px;
+      }
+      
+
+  }
+    
+  
